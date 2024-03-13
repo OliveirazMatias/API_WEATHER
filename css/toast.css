@@ -1,0 +1,15 @@
+.toast {
+    position: absolute;
+    font-size: 1.1em;
+    padding: 1rem;
+    background-color: #ef233c;
+    border-radius: 7px;
+    color: white;
+    right: 50%;
+    top: 1rem;
+    transform: translateX(50%);
+
+    & i {
+        float: left;
+    }
+}

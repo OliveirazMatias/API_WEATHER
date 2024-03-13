@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clima Time</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/weather-forecast.png" id="icon2">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <div class="image">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg" alt="" id="background">
+        <div class="glass"></div>
+    </div>
+    <span id="horario"></span>
+
+    <main>
+        
+
+        <div>
+            <div class="nomeCidade">
+                <h1 id="nome"></h1>
+                <img alt="" id="iconPais">
+            </div>
+            
+            <div class="temperatura">
+                <img alt="" id="iconClima">
+                <span id="temperatura"></span>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="umidade">
+                <strong><i class='bx bx-water' ></i> Umidade:</strong> <span id="umidade"></span>
+            </div>
+            <div class="veloVento">
+                <strong><i class='bx bx-wind' ></i> Velocidade do vento:</strong> <span id="veloVento"></span>
+            </div>
+            <div class="clima">
+                <strong><i class='bx bxs-cloud' ></i> Clima: </strong><span id="clima"></span>
+            </div>
+        </div>
+
+        <div class="pesquisar">
+            <input type="text" id="pesquisar" value="Marilia" placeholder="Procurar...">
+            <i class='bx bx-search-alt' ></i>
+        </div>
+
+    </main>
+
+</body>
+<script src="js/index.js"></script>
+
+</html>
