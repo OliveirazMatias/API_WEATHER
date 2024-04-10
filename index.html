@@ -5,53 +5,52 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clima Time</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/weather-forecast.png" id="icon2">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="css/main.css"> <!-- Importa o arquivo CSS principal -->
+    <link rel="icon" type="image/png" sizes="32x32" href="images/weather-forecast.png" id="icon2"> <!-- Ícone da página -->
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> <!-- Importa ícones da biblioteca BoxIcons -->
 </head>
 
 <body>
-    <div class="image">
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg" alt="" id="background">
-        <div class="glass"></div>
+    <div class="image"> <!-- Div para a imagem de fundo -->
+        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e7/Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg" alt="" id="background"> <!-- Imagem de fundo -->
+        <div class="glass"></div> <!-- Efeito de vidro (glass) -->
     </div>
-    <span id="horario"></span>
+    <span id="horario"></span> <!-- Elemento para exibir o horário -->
 
     <main>
-        
+        <!-- Seção principal -->
 
         <div>
-            <div class="nomeCidade">
-                <h1 id="nome"></h1>
-                <img alt="" id="iconPais">
+            <div class="nomeCidade"> <!-- Div para o nome da cidade -->
+                <h1 id="nome"></h1> <!-- Título com o nome da cidade -->
+                <img alt="" id="iconPais"> <!-- Imagem da bandeira do país -->
             </div>
             
-            <div class="temperatura">
-                <img alt="" id="iconClima">
-                <span id="temperatura"></span>
+            <div class="temperatura"> <!-- Div para a temperatura -->
+                <img alt="" id="iconClima"> <!-- Ícone representando o clima -->
+                <span id="temperatura"></span> <!-- Elemento para exibir a temperatura -->
             </div>
         </div>
 
-        <div class="container">
-            <div class="umidade">
-                <strong><i class='bx bx-water' ></i> Umidade:</strong> <span id="umidade"></span>
+        <div class="container"> <!-- Div para o container de informações -->
+            <div class="umidade"> <!-- Div para exibir a umidade -->
+                <strong><i class='bx bx-water' ></i> Umidade:</strong> <span id="umidade"></span> <!-- Ícone e texto da umidade -->
             </div>
-            <div class="veloVento">
-                <strong><i class='bx bx-wind' ></i> Velocidade do vento:</strong> <span id="veloVento"></span>
+            <div class="veloVento"> <!-- Div para exibir a velocidade do vento -->
+                <strong><i class='bx bx-wind' ></i> Velocidade do vento:</strong> <span id="veloVento"></span> <!-- Ícone e texto da velocidade do vento -->
             </div>
-            <div class="clima">
-                <strong><i class='bx bxs-cloud' ></i> Clima: </strong><span id="clima"></span>
+            <div class="clima"> <!-- Div para exibir o clima -->
+                <strong><i class='bx bxs-cloud' ></i> Clima: </strong><span id="clima"></span> <!-- Ícone e texto do clima -->
             </div>
         </div>
 
-        <div class="pesquisar">
-            <input type="text" id="pesquisar" value="Marilia" placeholder="Procurar...">
-            <i class='bx bx-search-alt' ></i>
+        <div class="pesquisar"> <!-- Div para o campo de pesquisa -->
+            <input type="text" id="pesquisar" value="Marilia" placeholder="Procurar..."> <!-- Campo de entrada para pesquisa -->
+            <i class='bx bx-search-alt' ></i> <!-- Ícone de pesquisa -->
         </div>
 
     </main>
 
 </body>
-<script src="js/index.js"></script>
-
+<script src="js/index.js"></script> <!-- Script JavaScript -->
 </html>

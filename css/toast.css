@@ -1,15 +1,17 @@
+/* Estilo para as mensagens de toast */
 .toast {
-    position: absolute;
-    font-size: 1.1em;
-    padding: 1rem;
-    background-color: #ef233c;
-    border-radius: 7px;
-    color: white;
-    right: 50%;
-    top: 1rem;
-    transform: translateX(50%);
+    position: absolute; /* Posicionamento absoluto */
+    font-size: 1.1em; /* Tamanho da fonte */
+    padding: 1rem; /* Espaçamento interno */
+    background-color: #ef233c; /* Cor de fundo */
+    border-radius: 7px; /* Bordas arredondadas */
+    color: white; /* Cor do texto */
+    right: 50%; /* Alinhado à direita na metade do contêiner pai */
+    top: 1rem; /* Distância do topo */
+    transform: translateX(50%); /* Translação horizontal para centralizar */
 
+    /* Estilo para o ícone dentro da mensagem de toast */
     & i {
-        float: left;
+        float: left; /* Flutua à esquerda */
     }
 }

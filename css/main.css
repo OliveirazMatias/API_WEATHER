@@ -1,142 +1,153 @@
+/* Importa o arquivo CSS para as mensagens de toast */
 @import "toast.css";
 
+/* Define o estilo padrão para todos os elementos */
 * {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    margin: 0;
-    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Define a fonte padrão */
+    margin: 0; /* Remove as margens padrão */
+    box-sizing: border-box; /* Define o modelo de caixa para incluir o padding e a borda no cálculo do tamanho */
 }
 
+/* Define o estilo para o elemento HTML */
 html {
-    overflow: hidden;
+    overflow: hidden; /* Esconde a barra de rolagem horizontal */
 }
 
-
+/* Define o estilo para uma imagem de fundo */
 .image {
-    width: 100%;
-    height: 100%;
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
 
     & img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-
+        width: 100%; /* Largura total */
+        height: 100%; /* Altura total */
+        object-fit: cover; /* Ajusta a imagem para cobrir o espaço, mantendo sua proporção */
     }
 }
 
+/* Define o estilo para um efeito de vidro (glass) */
 .glass {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
+    position: absolute; /* Posicionamento absoluto em relação ao documento */
+    top: 0; /* No topo */
+    width: 100%; /* Largura total */
+    height: 100%; /* Altura total */
 
-    background: rgba(255, 255, 255, 0.15);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-    backdrop-filter: blur(8.5px);
-    -webkit-backdrop-filter: blur(8.5px);
+    background: rgba(255, 255, 255, 0.15); /* Fundo branco semi-transparente */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    backdrop-filter: blur(8.5px); /* Aplica um desfoque ao fundo */
+    -webkit-backdrop-filter: blur(8.5px); /* Suporte para navegadores WebKit */
 }
 
+/* Define o estilo para o corpo do documento */
 body {
-    background-color: #f3f3f3;
-    width: 100%;
-    height: 100vh;
-    user-select: none;
+    background-color: #f3f3f3; /* Cor de fundo */
+    width: 100%; /* Largura total */
+    height: 100vh; /* Altura total da viewport */
+    user-select: none; /* Não permite a seleção de texto */
 }
 
+/* Define o estilo para o elemento de horário */
 #horario {
-    position: absolute;
-    right: 0;
-    top: 0;
-    background-color: #ffffffa4;
-    padding: 10px;
-    border-radius: 7px;
-    margin: 1rem;
-    font-size: 1.5em;
+    position: absolute; /* Posicionamento absoluto */
+    right: 0; /* Alinhado à direita */
+    top: 0; /* No topo */
+    background-color: #ffffffa4; /* Cor de fundo semi-transparente */
+    padding: 10px; /* Espaçamento interno */
+    border-radius: 7px; /* Bordas arredondadas */
+    margin: 1rem; /* Margem */
+    font-size: 1.5em; /* Tamanho da fonte */
 }
 
+/* Define o estilo para a seção principal */
 main {
-    width: 100%;
-    height: 40vh;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateX(-50%) translateY(-50%);
+    width: 100%; /* Largura total */
+    height: 40vh; /* Altura de 40% da viewport */
+    position: absolute; /* Posicionamento absoluto */
+    top: 50%; /* Alinhado verticalmente ao meio */
+    left: 50%; /* Alinhado horizontalmente ao meio */
+    transform: translateX(-50%) translateY(-50%); /* Centralização */
 
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+    display: flex; /* Exibe como flex container */
+    flex-direction: column; /* Direção de coluna */
+    align-items: center; /* Alinha ao centro horizontalmente */
+    justify-content: space-between; /* Distribui o espaço entre os elementos */
 
-
+    /* Estilo para a seção de pesquisa */
     & .pesquisar {
-        width: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
+        width: 50%; /* Largura de 50% */
+        display: flex; /* Exibe como flex container */
+        align-items: center; /* Alinha ao centro verticalmente */
+        justify-content: center; /* Alinha ao centro horizontalmente */
 
-        background-color: white;
-        border: 1px solid #80808067;
-        border-radius: 7px;
+        background-color: white; /* Cor de fundo */
+        border: 1px solid #80808067; /* Borda com transparência */
+        border-radius: 7px; /* Bordas arredondadas */
 
         & input {
-            background-color: transparent;
-            padding: 10px;
-            width: 100%;
-            border: none;
-            border-radius: 7px;
-            outline: none;
+            background-color: transparent; /* Fundo transparente para o input */
+            padding: 10px; /* Espaçamento interno */
+            width: 100%; /* Largura total */
+            border: none; /* Sem borda */
+            border-radius: 7px; /* Bordas arredondadas */
+            outline: none; /* Remove o contorno ao focar */
         }
 
         & i {
-            user-select: none;
-            font-size: 1.4em;
+            user-select: none; /* Não permite a seleção do ícone */
+            font-size: 1.4em; /* Tamanho da fonte do ícone */
         }
     }
 
+    /* Estilo para a seção do nome da cidade */
     & .nomeCidade {
-        display: flex;
-        justify-content: center;
-        color: #181818;
+        display: flex; /* Exibe como flex container */
+        justify-content: center; /* Alinha ao centro horizontalmente */
+        color: #181818; /* Cor do texto */
 
         & img {
-            height: 1.5rem;
+            height: 1.5rem; /* Altura da imagem */
         }
     }
 
+    /* Estilo para a seção de temperatura */
     & .temperatura {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: #181818;
-        user-select: none;
+        display: flex; /* Exibe como flex container */
+        align-items: center; /* Alinha ao centro verticalmente */
+        justify-content: center; /* Alinha ao centro horizontalmente */
+        color: #181818; /* Cor do texto */
+        user-select: none; /* Não permite a seleção de texto */
 
         & #temperatura {
-            font-weight: bold;
-            font-size: 2em;
-            user-select: none;
+            font-weight: bold; /* Negrito */
+            font-size: 2em; /* Tamanho da fonte */
+            user-select: none; /* Não permite a seleção de texto */
         }
     }
 
+    /* Estilo para a seção do container */
     & .container {
-        width: 50%;
-        background-color: #ffffffa4;
-        padding: 10px;
-        border-radius: 7px;
-        margin: 1rem;
+        width: 50%; /* Largura de 50% */
+        background-color: #ffffffa4; /* Cor de fundo semi-transparente */
+        padding: 10px; /* Espaçamento interno */
+        border-radius: 7px; /* Bordas arredondadas */
+        margin: 1rem; /* Margem */
     }
 }
 
+/* Media query para telas menores */
 @media screen and (max-width: 700px) {
 
     .pesquisar,
     .container {
-        width: 90% !important;
+        width: 90% !important; /* Largura de 90% para elementos de pesquisa e container */
     }
 
     main {
-        height: 50vh;
+        height: 50vh; /* Altura de 50% da viewport */
     }
 }
 
-#iconPais{
-    user-select: none;
+/* Estilo para o elemento de bandeira do país */
+#iconPais {
+    user-select: none; /* Não permite a seleção de texto */
 }
