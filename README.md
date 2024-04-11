@@ -1,6 +1,6 @@
 # Código para Apikey 🔑
 
-- no arquivo chamado config.json coloque sua chave api entre aspas na parte entre colchetes:
+- No arquivo chamado config.json coloque sua chave api entre aspas na parte entre colchetes:
 
 {
     "apikey": "[sua chave da api]"
